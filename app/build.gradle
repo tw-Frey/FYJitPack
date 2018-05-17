@@ -23,7 +23,8 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.tw-Frey.JitPackFY:JavaLibrary:v2.9'
+//    implementation 'com.github.tw-Frey.JitPackFY:JavaLibrary:v2.9'
+    implementation 'com.github.tw-Frey.FYJitPack:JavaLibrary:v2.1'
     implementation 'com.github.tw-Frey.FYJitPack:LiBRARY:v1.8'
     //implementation 'com.github.tw-Frey:FYJitPack:v1.8'
     implementation 'com.android.support:appcompat-v7:27.1.1'

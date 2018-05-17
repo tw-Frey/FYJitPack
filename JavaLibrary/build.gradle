@@ -1,6 +1,6 @@
 apply plugin: 'java-library'
 apply plugin: 'maven'
-group="com.github.tw-Frey"
+group='com.github.tw-Frey'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
