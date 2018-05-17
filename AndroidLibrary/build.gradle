@@ -1,9 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'android-maven' //'com.github.dcendents.android-maven'
-//
-//group='com.github.tw-Frey'
-//version = "3.0"
-//
+apply plugin: 'android-maven'
+
 android {
     compileSdkVersion 27
 
