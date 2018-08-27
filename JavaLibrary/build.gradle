@@ -20,9 +20,10 @@ repositories {
     jcenter()
 }
 
-apply plugin: 'java-library'
-apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'maven'
 //group='com.github.tw-Frey'
+apply plugin: 'java-library'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

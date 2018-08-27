@@ -20,9 +20,9 @@ repositories {
     jcenter()
 }
 
-apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven'
 //group='com.github.tw-Frey'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 27
