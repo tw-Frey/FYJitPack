@@ -23,10 +23,5 @@ apply plugin: 'maven'
 //group='com.github.tw-Frey'
 apply plugin: 'java-library'
 
-dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':AndroidStaticLibrary')
-}
-
 sourceCompatibility = "1.8"
 targetCompatibility = "1.8"

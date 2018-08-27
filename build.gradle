@@ -1,3 +1,52 @@
-task clean(type: Delete) {
-    delete rootProject.buildDir
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+// Module-level build file where you can add configuration options common to projects/modules.
+repositories {
+    google()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        applicationId "tw.idv.fy.fyjitpack.root"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.github.tw-Frey.FYJitPack:AndroidLibrary:v3.2'
+    implementation 'com.github.tw-Frey.FYJitPack:JavaLibrary:v3.2'
+    implementation 'com.github.tw-Frey.FYJitPack:LiBRARY:v3.2'
+    //implementation 'com.github.tw-Frey:FYJitPack:v3.2'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }

@@ -17,7 +17,6 @@ buildscript {
 repositories {
     google()
     jcenter()
-    maven { url 'https://jitpack.io' }
 }
 
 apply plugin: 'com.android.application'
@@ -41,9 +40,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.github.tw-Frey.FYJitPack:AndroidLibrary:v3.2'
-    implementation 'com.github.tw-Frey.FYJitPack:JavaLibrary:v3.2'
-    implementation 'com.github.tw-Frey.FYJitPack:LiBRARY:v3.2'
+    implementation project(':AndroidLibrary')
+    implementation project(':JavaLibrary')
+    implementation project(':LiBRARY')
     //implementation 'com.github.tw-Frey:FYJitPack:v3.2'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
