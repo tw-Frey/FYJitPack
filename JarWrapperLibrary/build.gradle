@@ -10,6 +10,7 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -19,15 +20,30 @@ repositories {
     jcenter()
 }
 
-apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
 //group='com.github.tw-Frey'
-apply plugin: 'java-library'
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main.manifest.srcFile(file("AndroidManifest.xml"))
+}
 
 dependencies {
-    api(project(':AndroidStaticLibrary')){
+    api(project(":JarLibrary")){
         transitive = true
     }
 }
-
-sourceCompatibility = "1.8"
-targetCompatibility = "1.8"
