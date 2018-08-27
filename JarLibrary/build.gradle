@@ -24,7 +24,7 @@ apply plugin: 'maven'
 apply plugin: 'java-library'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 sourceCompatibility = "1.8"
