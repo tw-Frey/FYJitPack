@@ -43,7 +43,7 @@ android {
 }
 
 dependencies {
-    api(project(":JarLibrary")){
+    api(project(":AndroidStaticLibrary")){
         transitive = true
     }
 }
