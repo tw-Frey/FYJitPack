@@ -24,7 +24,7 @@ apply plugin: 'maven'
 apply plugin: 'java-library'
 
 dependencies {
-    api(project(':JarLibrary')){
+    api(project(':AndroidStaticLibrary')){
         transitive = true
     }
 }
