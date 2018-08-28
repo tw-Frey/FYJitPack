@@ -41,10 +41,10 @@ android {
 }
 
 dependencies {
-    //implementation 'com.github.tw-Frey.FYJitPack:AndroidLibrary:v3.4'
-    //implementation 'com.github.tw-Frey.FYJitPack:JavaLibrary:v3.4'
-    //implementation 'com.github.tw-Frey.FYJitPack:LiBRARY:v3.4'
-    implementation 'com.github.tw-Frey:FYJitPack:v4.0'
+    //implementation 'com.github.tw-Frey.FYJitPack:AndroidLibrary:v4.1'
+    //implementation 'com.github.tw-Frey.FYJitPack:JarWrapperLibrary:v4.1'
+    //implementation 'com.github.tw-Frey.FYJitPack:LiBRARY:v4.1'
+    implementation 'com.github.tw-Frey:FYJitPack:v4.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
