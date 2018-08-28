@@ -20,7 +20,7 @@ repositories {
     jcenter()
 }
 
-//apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven'
 //group='com.github.tw-Frey'
 apply plugin: 'com.android.library'
 
@@ -43,7 +43,8 @@ android {
 }
 
 dependencies {
-    api(project(":AndroidStaticLibrary")){
-        transitive = true
-    }
+    //    api(project(":AndroidStaticLibrary")){
+    //        transitive = true
+    //    }
+    implementation files('libs/JavaLibrary.jar')
 }
