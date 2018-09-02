@@ -46,6 +46,6 @@ dependencies {
     //    api(project(":AndroidStaticLibrary")){
     //        transitive = true
     //    }
-    //implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation files('libs/JavaLibrary.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation files('libs/JavaLibrary.jar')
 }
