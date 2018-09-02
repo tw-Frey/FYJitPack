@@ -1,5 +1,6 @@
 package tw.idv.fy.fyjitpack;
 
+import tw.idv.fy.JarWrapperLibrary.MyClass;
 import tw.idv.fy.javalibrary.FYClass;
 
 public class AAA extends FYClass {
@@ -7,6 +8,6 @@ public class AAA extends FYClass {
         FYClass.main(null);
     }
     void main(){
-        AAA.main(null);
+        AAA.main(new String[]{String.valueOf(new MyClass())});
     }
 }
